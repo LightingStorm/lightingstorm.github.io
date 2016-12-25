@@ -8,7 +8,7 @@ var location = {
 };
 
 function initMap() {
-    map = new google.maps.Map(cyrusMap, {
+    map = new google.maps.Map(cyrusMap.get(0), {
         zoom: 14,
         center: location
     });
