@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Demo Google Map Marker</title>
+    <meta charset="UTF-8">
+	<link href="bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="bootstrap-3.3.4/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="bootstrap-3.3.4/css/bootstrap.css" rel="stylesheet" />
+  </head>
+  <body>
+	 <form>
+	  <input type="text" class="form-control" name="maps_address" id="maps_address" value="" placeholder="Nhập tên địa điểm cần tìm">
+	  <div id="maps_maparea">
+		  <div id="maps_mapcanvas" style="margin-top:10px;" class="form-group"></div>
+		  <div class="row">
+			  <div class="col-xs-6">
+				<div class="form-group">
+				  <div class="input-group">
+					  <span class="input-group-addon">Latitude map</span>
+					  <input type="text" class="form-control" name="maps[maps_mapcenterlat]" id="maps_mapcenterlat" value="{maps_mapcenterlat}" readonly="readonly">
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-xs-6">
+				<div class="form-group">
+				  <div class="input-group">
+					  <span class="input-group-addon">Longitude map</span>
+					  <input type="text" class="form-control" name="maps[maps_mapcenterlng]" id="maps_mapcenterlng" value="{maps_mapcenterlng}" readonly="readonly">
+				  </div>
+				 </div>
+			  </div>
+			  <div class="col-xs-6">
+				<div class="form-group">
+				  <div class="input-group">
+					  <span class="input-group-addon">Latitude marker</span>
+					  <input type="text" class="form-control" name="maps[maps_maplat]" id="maps_maplat" value="{maps_maplat}" readonly="readonly">
+				  </div>
+				 </div>
+			  </div>
+			  <div class="col-xs-6">
+				<div class="form-group">
+				  <div class="input-group">
+					  <span class="input-group-addon">Longitude marker</span>
+					  <input type="text" class="form-control" name="maps[maps_maplng]" id="maps_maplng" value="{maps_maplng}" readonly="readonly">
+				  </div>
+				  </div>
+			  </div>
+		  </div>
+		  <div class="row">
+			  <div class="col-xs-12">
+				<div class="form-group">
+				  <div class="input-group">
+					  <span class="input-group-addon">Zoom</span>
+					  <input type="text" class="form-control" name="maps[maps_mapzoom]" id="maps_mapzoom" value="{maps_mapzoom}" readonly="readonly">
+				  </div>
+				 </div>
+			  </div>
+		  </div>
+	  </div>
+	</form>
+	
+	<script src="jquery-2.1.4.min.js"></script>
+    <script src="bootstrap-3.3.4/js/bootstrap.min.js"></script>
+	<script src="index.js"></script>
+  </body>
+</html>
