@@ -1,5 +1,4 @@
 var map;
-var marker;
 var cyrusMap = $('#cyrus-map');
 
 function initMap() {
@@ -14,12 +13,5 @@ function initMap() {
             lng: 106.6829062
         }
     });
-
-    marker = new google.maps.Marker({
-        position: {
-            lat: 10.7607409,
-            lng: 106.6829062
-        },
-        map: map
-    });
 }
+

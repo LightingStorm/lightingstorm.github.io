@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cyrus Map</title>
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="cyrus-map" class="map"></div>
+
+        <aside class="sidebar">
+            <header class="header">
+                Google Maps Direction API
+            </header>
+
+            <main>
+                <div class="frm-search">
+                    <div class="input">
+                        <label for="txt-origin" class="title"><span class="fa fa-circle-o"></span>Origin</label>
+                        <input type="text" id="txt-origin" placeholder="Choose origin">
+                    </div>
+                    <div class="input">
+                        <label for="txt-destination" class="title"><span class="fa fa-map-marker"></span> Destination</label>
+                        <input type="text" id="txt-destination" placeholder="Choose destination">
+                    </div>
+                    <div>
+                        <button type="button" class="btn-search" id="btn-search">Search</button>
+                    </div>
+                </div>
+            </main>
+        </aside>
+
+        <script src="jquery.min.js"></script>
+        <script src="index.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkds9ggyRFpcqMms_ilugLUZaflz-UQSU&callback=initMap"></script>
+    </body>
+</html>

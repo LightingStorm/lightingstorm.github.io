@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.map {
+    float: right;
+    width: calc(100vw - 408px);
+    height: 100vh;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 408px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.sidebar .header {
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #4285F4;
+}
+
+.sidebar .header .fa {
+    font-size: 1rem;
+    margin-right: 8px;
+}
+
+.input {
+    margin: 16px;
+}
+
+.input .title {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 1rem;
+    color: #8C8C8C;
+}
+
+.input .title .fa {
+    font-size: 1rem;
+    margin-right: 8px;
+}
+
+.input input[type=text] {
+    padding: 4px 8px;
+    width: calc(100% - 24px);
+}
+
+.frm-search .btn-search {
+    float: right;
+    padding: 4px 16px;
+    background-color: #0c6;
+    border: none;
+    color: #fff;
+    font-size: .8rem;
+    margin-right: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.frm-search .btn-search:hover {
+    background-color: #32d684;
+}
+
+.frm-search .btn-search:active {
+    background-color: #00a351;
+}
